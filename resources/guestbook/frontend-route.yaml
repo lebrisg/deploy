@@ -7,10 +7,8 @@ metadata:
     app: guestbook
   name: guestbook-route
 spec:
-  path: /
+  path: "/"
   to:
     kind: Service
     name: frontend
     weight: 100
-  port:
-    targetPort: 8080
